@@ -1,0 +1,125 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "buyTickets",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "ticketHolders",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "useTickets",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "use this smart contract in place of ERC20 because ERC20 is bulky for this use case",
+			"kind": "dev",
+			"methods": {
+				"buyTickets(address,uint256)": {
+					"details": "allows _user to buy a ticket"
+				},
+				"constructor": {
+					"details": "set contract deployer as owner"
+				},
+				"withdraw()": {
+					"details": "implement a withdraw method to get ether out again"
+				}
+			},
+			"title": "Ticket",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Smart_contract/Ticket.sol": "Ticket"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Smart_contract/Ticket.sol": {
+			"keccak256": "0xbae00d9db441c72b4a8bb32eeb07b582605c83c74d33824d0c2cf52aadc293d8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2bd3f22fc7cd2be61d61f40731b505f22d4f90357ae256c4560d9c66fa0c6d38",
+				"dweb:/ipfs/QmVEgXve9dEYHZ3sJHeu1D71jbn6oCeovC3qQxZScSQPya"
+			]
+		}
+	},
+	"version": 1
+}
